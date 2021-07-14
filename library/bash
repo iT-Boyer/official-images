@@ -3,57 +3,57 @@
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon)
 GitRepo: https://github.com/tianon/docker-bash.git
 
-Tags: devel-20201128, devel
+Tags: devel-20210712, devel
 Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: bc28cc2452049074a182cb3f379b8ce810cc46c2
+GitCommit: 69328435dd4efeaa999cc2f70f782bfc36c992d4
 Directory: devel
 
-Tags: 5.1.0, 5.1, 5, latest
+Tags: 5.1.8, 5.1, 5, latest
 Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: e467130f2e4d7740cd6e730cfad71e354cb53394
+GitCommit: a2d1a192e467f18b630166ea5efd99b1dc8ca1fb
 Directory: 5.1
 
 Tags: 5.0.18, 5.0
 Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 7d80c7cc5d829b6be9e04b6b2cba98a228fb67db
+GitCommit: a2d1a192e467f18b630166ea5efd99b1dc8ca1fb
 Directory: 5.0
 
 Tags: 4.4.23, 4.4, 4
 Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 7d80c7cc5d829b6be9e04b6b2cba98a228fb67db
+GitCommit: a2d1a192e467f18b630166ea5efd99b1dc8ca1fb
 Directory: 4.4
 
 Tags: 4.3.48, 4.3
 Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 7d80c7cc5d829b6be9e04b6b2cba98a228fb67db
+GitCommit: a2d1a192e467f18b630166ea5efd99b1dc8ca1fb
 Directory: 4.3
 
 Tags: 4.2.53, 4.2
 Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 7d80c7cc5d829b6be9e04b6b2cba98a228fb67db
+GitCommit: a2d1a192e467f18b630166ea5efd99b1dc8ca1fb
 Directory: 4.2
 
 Tags: 4.1.17, 4.1
 Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 7d80c7cc5d829b6be9e04b6b2cba98a228fb67db
+GitCommit: a2d1a192e467f18b630166ea5efd99b1dc8ca1fb
 Directory: 4.1
 
 Tags: 4.0.44, 4.0
 Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 7d80c7cc5d829b6be9e04b6b2cba98a228fb67db
+GitCommit: a2d1a192e467f18b630166ea5efd99b1dc8ca1fb
 Directory: 4.0
 
 Tags: 3.2.57, 3.2, 3
 Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 7d80c7cc5d829b6be9e04b6b2cba98a228fb67db
+GitCommit: a2d1a192e467f18b630166ea5efd99b1dc8ca1fb
 Directory: 3.2
 
 Tags: 3.1.23, 3.1
 Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 7d80c7cc5d829b6be9e04b6b2cba98a228fb67db
+GitCommit: a2d1a192e467f18b630166ea5efd99b1dc8ca1fb
 Directory: 3.1
 
 Tags: 3.0.22, 3.0
 Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 7d80c7cc5d829b6be9e04b6b2cba98a228fb67db
+GitCommit: a2d1a192e467f18b630166ea5efd99b1dc8ca1fb
 Directory: 3.0
