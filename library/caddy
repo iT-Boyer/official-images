@@ -1,51 +1,68 @@
 # this file is generated with gomplate:
-# template: https://github.com/caddyserver/caddy-docker/blob/c74bdca53a1efd5195a9c35005e5515afb5feeff/stackbrew.tmpl
-# config context: https://github.com/caddyserver/caddy-docker/blob/e01e0a10625f95d031411215378b5f790047d990/stackbrew-config.yaml
-Maintainers: Dave Henderson (@hairyhenderson)
+# template: https://github.com/caddyserver/caddy-docker/blob/e05f66898af9a0a694af637db2724f91d9d82ed7/stackbrew.tmpl
+# config context: https://github.com/caddyserver/caddy-docker/blob/d322e6686bbce5622d98a04c84fadd43b5eb8c58/stackbrew-config.yaml
+Maintainers: Dave Henderson (@hairyhenderson),
+             Francis Lavoie (@francislavoie)
 
-Tags: 2.4.3-alpine, 2-alpine, alpine
-SharedTags: 2.4.3, 2, latest
+Tags: 2.11.9-alpine, 2.11-alpine, 2-alpine, alpine
+SharedTags: 2.11.9, 2.11, 2, latest
 GitRepo: https://github.com/caddyserver/caddy-docker.git
-Directory: 2.4/alpine
-GitCommit: 1e2cf7dde14c0cfd3275efdd23f4700ecfc2419f
-Architectures: amd64, arm64v8, arm32v6, arm32v7, ppc64le, s390x
+Directory: 2.11/alpine
+GitCommit: d322e6686bbce5622d98a04c84fadd43b5eb8c58
+Architectures: amd64, arm64v8, arm32v6, arm32v7, ppc64le, riscv64, s390x
 
-Tags: 2.4.3-builder-alpine, 2-builder-alpine, builder-alpine
-SharedTags: 2.4.3-builder, 2-builder, builder
+Tags: 2.11.9-builder-alpine, 2.11-builder-alpine, 2-builder-alpine, builder-alpine
+SharedTags: 2.11.9-builder, 2.11-builder, 2-builder, builder
 GitRepo: https://github.com/caddyserver/caddy-docker.git
-Directory: 2.4/builder
-GitCommit: e01e0a10625f95d031411215378b5f790047d990
-Architectures: amd64, arm64v8, arm32v6, arm32v7, ppc64le, s390x
+Directory: 2.11/builder
+GitCommit: d322e6686bbce5622d98a04c84fadd43b5eb8c58
+Architectures: amd64, arm64v8, arm32v6, arm32v7, ppc64le, riscv64, s390x
 
-Tags: 2.4.3-windowsservercore-1809, 2-windowsservercore-1809, windowsservercore-1809
-SharedTags: 2.4.3-windowsservercore, 2-windowsservercore, windowsservercore, 2.4.3, 2, latest
+Tags: 2.11.9-windowsservercore-ltsc2022, 2.11-windowsservercore-ltsc2022, 2-windowsservercore-ltsc2022, windowsservercore-ltsc2022
+SharedTags: 2.11.9-windowsservercore, 2.11-windowsservercore, 2-windowsservercore, windowsservercore, 2.11.9, 2.11, 2, latest
 GitRepo: https://github.com/caddyserver/caddy-docker.git
-Directory: 2.4/windows/1809
-GitCommit: 1e2cf7dde14c0cfd3275efdd23f4700ecfc2419f
+Directory: 2.11/windows/ltsc2022
+GitCommit: d322e6686bbce5622d98a04c84fadd43b5eb8c58
 Architectures: windows-amd64
-Constraints: windowsservercore-1809
+Constraints: windowsservercore-ltsc2022
 
-Tags: 2.4.3-windowsservercore-ltsc2016, 2-windowsservercore-ltsc2016, windowsservercore-ltsc2016
-SharedTags: 2.4.3-windowsservercore, 2-windowsservercore, windowsservercore, 2.4.3, 2, latest
+Tags: 2.11.9-windowsservercore-ltsc2025, 2.11-windowsservercore-ltsc2025, 2-windowsservercore-ltsc2025, windowsservercore-ltsc2025
+SharedTags: 2.11.9-windowsservercore, 2.11-windowsservercore, 2-windowsservercore, windowsservercore, 2.11.9, 2.11, 2, latest
 GitRepo: https://github.com/caddyserver/caddy-docker.git
-Directory: 2.4/windows/ltsc2016
-GitCommit: 1e2cf7dde14c0cfd3275efdd23f4700ecfc2419f
+Directory: 2.11/windows/ltsc2025
+GitCommit: d322e6686bbce5622d98a04c84fadd43b5eb8c58
 Architectures: windows-amd64
-Constraints: windowsservercore-ltsc2016
+Constraints: windowsservercore-ltsc2025
 
-Tags: 2.4.3-builder-windowsservercore-1809, 2-builder-windowsservercore-1809, builder-windowsservercore-1809
-SharedTags: 2.4.3-builder, 2-builder, builder
+Tags: 2.11.9-nanoserver-ltsc2022, 2.11-nanoserver-ltsc2022, 2-nanoserver-ltsc2022, nanoserver-ltsc2022
+SharedTags: 2.11.9-nanoserver, 2.11-nanoserver, 2-nanoserver, nanoserver
 GitRepo: https://github.com/caddyserver/caddy-docker.git
-Directory: 2.4/windows-builder/1809
-GitCommit: 1e2cf7dde14c0cfd3275efdd23f4700ecfc2419f
+Directory: 2.11/windows-nanoserver/ltsc2022
+GitCommit: d322e6686bbce5622d98a04c84fadd43b5eb8c58
 Architectures: windows-amd64
-Constraints: windowsservercore-1809
+Constraints: nanoserver-ltsc2022, windowsservercore-ltsc2022
 
-Tags: 2.4.3-builder-windowsservercore-ltsc2016, 2-builder-windowsservercore-ltsc2016, builder-windowsservercore-ltsc2016
-SharedTags: 2.4.3-builder, 2-builder, builder
+Tags: 2.11.9-nanoserver-ltsc2025, 2.11-nanoserver-ltsc2025, 2-nanoserver-ltsc2025, nanoserver-ltsc2025
+SharedTags: 2.11.9-nanoserver, 2.11-nanoserver, 2-nanoserver, nanoserver
 GitRepo: https://github.com/caddyserver/caddy-docker.git
-Directory: 2.4/windows-builder/ltsc2016
-GitCommit: 1e2cf7dde14c0cfd3275efdd23f4700ecfc2419f
+Directory: 2.11/windows-nanoserver/ltsc2025
+GitCommit: d322e6686bbce5622d98a04c84fadd43b5eb8c58
 Architectures: windows-amd64
-Constraints: windowsservercore-ltsc2016
+Constraints: nanoserver-ltsc2025, windowsservercore-ltsc2025
+
+Tags: 2.11.9-builder-windowsservercore-ltsc2022, 2.11-builder-windowsservercore-ltsc2022, 2-builder-windowsservercore-ltsc2022, builder-windowsservercore-ltsc2022
+SharedTags: 2.11.9-builder, 2.11-builder, 2-builder, builder
+GitRepo: https://github.com/caddyserver/caddy-docker.git
+Directory: 2.11/windows-builder/ltsc2022
+GitCommit: d322e6686bbce5622d98a04c84fadd43b5eb8c58
+Architectures: windows-amd64
+Constraints: windowsservercore-ltsc2022
+
+Tags: 2.11.9-builder-windowsservercore-ltsc2025, 2.11-builder-windowsservercore-ltsc2025, 2-builder-windowsservercore-ltsc2025, builder-windowsservercore-ltsc2025
+SharedTags: 2.11.9-builder, 2.11-builder, 2-builder, builder
+GitRepo: https://github.com/caddyserver/caddy-docker.git
+Directory: 2.11/windows-builder/ltsc2025
+GitCommit: d322e6686bbce5622d98a04c84fadd43b5eb8c58
+Architectures: windows-amd64
+Constraints: windowsservercore-ltsc2025
 

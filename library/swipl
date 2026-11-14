@@ -1,11 +1,11 @@
-Maintainers: Jan Wielemaker <J.Wielemaker@vu.nl> (@JanWielemaker),
+Maintainers: Jan Wielemaker <jan@swi-prolog.org> (@JanWielemaker),
              Dave Curylo <dave@curylo.org> (@ninjarobot)
 GitRepo: https://github.com/SWI-Prolog/docker-swipl.git
-GitCommit: 03cfc00242c65ac7bcc1f99cb2bd67babb1c3c44
+GitCommit: 3be7dc8fa9da96137265f65a1e60e15703f2a6ce
 Architectures: amd64, arm32v7, arm64v8
 
-Tags: latest, 8.3.26
-Directory: 8.3.26/stretch
+Tags: latest, 10.1.20
+Directory: 10.1.20/trixie
 
-Tags: stable, 8.2.4
-Directory: 8.2.4/stretch
+Tags: stable, 10.0.2
+Directory: 10.0.2/bookworm

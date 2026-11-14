@@ -6,13 +6,13 @@ dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 image="$1"
 
 # Use a client image with curl for testing
-clientImage='buildpack-deps:buster-curl'
+clientImage='buildpack-deps:trixie-curl'
 # ensure the clientImage is ready and available
 if ! docker image inspect "$clientImage" &> /dev/null; then
 	docker pull "$clientImage" > /dev/null
 fi
 
-pgImage='postgres:12.3'
+pgImage='postgres:18'
 if ! docker image inspect "$pgImage" &> /dev/null; then
 	docker pull "$pgImage" > /dev/null
 fi
@@ -21,7 +21,7 @@ dbuser='postgres'
 dbpass="silver-$RANDOM-$RANDOM"
 dbdatabase='silverpeas'
 
-# run a PostgresSQL container
+# run a PostgreSQL container
 dbname="postgresql-container-$RANDOM-$RANDOM"
 docker run -d \
 	--name "$dbname" \

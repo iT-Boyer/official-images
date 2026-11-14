@@ -1,14 +1,24 @@
-# this file is generated via https://github.com/TimWolla/docker-adminer/blob/a46dbffde41a1f48f61e5881033a21011f472de1/generate-stackbrew-library.sh
+# this file is generated via https://github.com/TimWolla/docker-adminer/blob/2818c59918c78cae6b9e219ac94bc0b639b4b98e/generate-stackbrew-library.sh
 
 Maintainers: Tim Düsterhus <tim@bastelstu.be> (@TimWolla)
 GitRepo: https://github.com/TimWolla/docker-adminer.git
 
-Tags: 4.8.1-standalone, 4-standalone, standalone, 4.8.1, 4, latest
-Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 9957ca52b8f442213fb116503dc7d0e18d4dc228
-Directory: 4
+Tags: 6.3.0, 6, latest, 6.3.0-standalone, 6-standalone, standalone
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 6d83dde54e9e8a76c9e003eb494e296808a2a627
+Directory: 6
 
-Tags: 4.8.1-fastcgi, 4-fastcgi, fastcgi
-Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 9957ca52b8f442213fb116503dc7d0e18d4dc228
-Directory: 4/fastcgi
+Tags: 6.3.0-fastcgi, 6-fastcgi, fastcgi
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 6d83dde54e9e8a76c9e003eb494e296808a2a627
+Directory: 6/fastcgi
+
+Tags: 5.5.1, 5, 5.5.1-standalone, 5-standalone
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 5f14885ec2f8ad8b2a5b94b42017cced5cae3e45
+Directory: 5
+
+Tags: 5.5.1-fastcgi, 5-fastcgi
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 5f14885ec2f8ad8b2a5b94b42017cced5cae3e45
+Directory: 5/fastcgi

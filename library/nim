@@ -1,0 +1,11 @@
+Maintainers: Constantine Molchanov (@moigagoo)
+GitRepo: https://github.com/nim-lang/docker-images.git
+GitCommit: af310b49a97b13145fbc0aa0875d23788f88e4ee
+
+Tags: 2.4.0, 2.4, 2, latest
+Architectures: amd64, i386
+Directory: dockerfiles/2.4.0
+
+Tags: 2.2.14, 2.2
+Architectures: amd64, arm64v8, i386, arm32v7
+Directory: dockerfiles/2.2.14

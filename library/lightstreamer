@@ -1,43 +1,54 @@
-Maintainers: Lightstreamer Server Development Team <support@lightreamer.com> (@lightstreamer)
+Maintainers: Lightstreamer Server Development Team <support@lightstreamer.com> (@lightstreamer),
+             Dario Crivelli <dario.crivelli@lightstreamer.com> (@dario-weswit),
+             Gianluca Finocchiaro <gianluca.finocchiaro@lightstreamer.com> (@gfinocchiaro)
 GitRepo: https://github.com/Lightstreamer/Docker.git
 
-Tags: 6.0.3, 6.0
-Architectures: amd64
-GitCommit: eeab1ae534273b1b05c973e577a1f3eec8d58427
-Directory: 6.0
-
-Tags: 6.1.0, 6.1, 6
-Architectures: amd64
-GitCommit: eeab1ae534273b1b05c973e577a1f3eec8d58427
-Directory: 6.1
-
-Tags: 7.0.3-jdk8-openjdk, 7.0-jdk8-openjdk, 7.0.3-jdk8, 7.0-jdk8
-Architectures: amd64
-GitCommit: f3aaece15133b9405aef20c5d378c5a83aba7585
-Directory: 7.0/jdk8
-
-Tags: 7.0.3-jdk11-openjdk, 7.0-jdk11-openjdk, 7.0.3-jdk11, 7.0-jdk11, 7.0.3, 7.0
+Tags: 7.4.9-jdk8, 7.4-jdk8, 7.4.9-jdk8-temurin, 7.4-jdk8-temurin, 7-jdk8, 7-jdk8-temurin
 Architectures: amd64, arm64v8
-GitCommit: f3aaece15133b9405aef20c5d378c5a83aba7585
-Directory: 7.0/jdk11
+GitCommit: 5b7822e3140b9d42a1cc8d7d48757f2032b8133f
+Directory: 7.4/jdk8
 
-Tags: 7.1.2-jdk8-openjdk, 7.1-jdk8-openjdk, 7.1.2-jdk8, 7.1-jdk8
-Architectures: amd64
-GitCommit: 7bdd2632e1cae0bf838899d591aadb2dd128c41a
-Directory: 7.1/jdk8
-
-Tags: 7.1.2-jdk11-openjdk, 7.1-jdk11-openjdk, 7.1.2-jdk11, 7.1-jdk11, 7.1.2, 7.1
+Tags: 7.4.9-jdk8-base, 7.4-jdk8-base, 7.4.9-jdk8-temurin-base, 7.4-jdk8-temurin-base, 7-jdk8-base, 7-jdk8-temurin-base
 Architectures: amd64, arm64v8
-GitCommit: 7bdd2632e1cae0bf838899d591aadb2dd128c41a
-Directory: 7.1/jdk11
+GitCommit: f30e047971532b8eaa274f169b239b05c3dc09af
+Directory: 7.4/jdk8-base
 
-Tags: 7.2.0-jdk11-openjdk, 7.2-jdk11-openjdk, 7-jdk11-openjdk, 7.2.0-jdk11, 7.2-jdk11, 7-jdk11, 7.2.0, 7.2, latest
+Tags: 7.4.9-jdk11, 7.4-jdk11, 7.4.9-jdk11-temurin, 7.4-jdk11-temurin, 7-jdk11, 7-jdk11-temurin
 Architectures: amd64, arm64v8
-GitCommit: fe38e8a5b87c4cb29b964a49f9ce7f0a50752b48
-Directory: 7.2/jdk11
+GitCommit: 5b7822e3140b9d42a1cc8d7d48757f2032b8133f
+Directory: 7.4/jdk11
 
-Tags: 7.2.0-jdk8-openjdk, 7.2-jd8-openjdk, 7-jdk8-openjdk, 7.2.0-jdk8, 7.2-jdk8, 7-jdk8
+Tags: 7.4.9-jdk11-base, 7.4-jdk11-base, 7.4.9-jdk11-temurin-base, 7.4-jdk11-temurin-base, 7-jdk11-base, 7-jdk11-temurin-base
 Architectures: amd64, arm64v8
-GitCommit: fe38e8a5b87c4cb29b964a49f9ce7f0a50752b48
-Directory: 7.2/jdk8
+GitCommit: f30e047971532b8eaa274f169b239b05c3dc09af
+Directory: 7.4/jdk11-base
 
+Tags: 7.4.9-jdk17, 7.4-jdk17, 7.4.9-jdk17-temurin, 7.4-jdk17-temurin, 7-jdk17, 7-jdk17-temurin
+Architectures: amd64, arm64v8
+GitCommit: 5b7822e3140b9d42a1cc8d7d48757f2032b8133f
+Directory: 7.4/jdk17
+
+Tags: 7.4.9-jdk17-base, 7.4-jdk17-base, 7.4.9-jdk17-temurin-base, 7.4-jdk17-temurin-base, 7-jdk17-base, 7-jdk17-temurin-base
+Architectures: amd64, arm64v8
+GitCommit: f30e047971532b8eaa274f169b239b05c3dc09af
+Directory: 7.4/jdk17-base
+
+Tags: 7.4.9-jdk21, 7.4-jdk21, 7.4.9-jdk21-temurin, 7.4-jdk21-temurin, 7-jdk21, 7-jdk21-temurin
+Architectures: amd64, arm64v8
+GitCommit: 5b7822e3140b9d42a1cc8d7d48757f2032b8133f
+Directory: 7.4/jdk21
+
+Tags: 7.4.9-jdk21-base, 7.4-jdk21-base, 7.4.9-jdk21-temurin-base, 7.4-jdk21-temurin-base, 7-jdk21-base, 7-jdk21-temurin-base
+Architectures: amd64, arm64v8
+GitCommit: f30e047971532b8eaa274f169b239b05c3dc09af
+Directory: 7.4/jdk21-base
+
+Tags: 7.4.9-jdk25, 7.4-jdk25, 7.4.9-jdk25-temurin, 7.4-jdk25-temurin, 7-jdk25, 7-jdk25-temurin, 7.4.9, 7.4, 7, latest
+Architectures: amd64, arm64v8
+GitCommit: 5b7822e3140b9d42a1cc8d7d48757f2032b8133f
+Directory: 7.4/jdk25
+
+Tags: 7.4.9-jdk25-base, 7.4-jdk25-base, 7.4.9-jdk25-temurin-base, 7.4-jdk25-temurin-base, 7-jdk25-base, 7-jdk25-temurin-base, 7.4.9-base, 7.4-base, 7-base, base
+Architectures: amd64, arm64v8
+GitCommit: f30e047971532b8eaa274f169b239b05c3dc09af
+Directory: 7.4/jdk25-base

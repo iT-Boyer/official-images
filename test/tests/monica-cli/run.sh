@@ -5,7 +5,7 @@ dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
 image="$1"
 
-dbImage='mysql:5.7'
+dbImage='mysql:lts'
 # ensure the dbImage is ready and available
 if ! docker image inspect "$dbImage" &> /dev/null; then
 	docker pull "$dbImage" > /dev/null
@@ -15,7 +15,7 @@ fi
 mysqlCid="$(docker run -d \
 	-e MYSQL_RANDOM_ROOT_PASSWORD=true \
 	-e MYSQL_DATABASE=monica \
-	-e MYSQL_USER=homestead \
+	-e MYSQL_USER=monica \
 	-e MYSQL_PASSWORD=secret \
 	"$dbImage")"
 trap "docker rm -vf $mysqlCid > /dev/null" EXIT
@@ -23,6 +23,10 @@ trap "docker rm -vf $mysqlCid > /dev/null" EXIT
 cid="$(docker run -d \
 	--link "$mysqlCid":mysql \
 	-e DB_HOST=mysql \
+	-e DB_CONNECTION=mysql \
+	-e DB_DATABASE=monica \
+	-e DB_USERNAME=monica \
+	-e DB_PASSWORD=secret \
 	"$image")"
 trap "docker rm -vf $cid $mysqlCid > /dev/null" EXIT
 
@@ -34,7 +38,7 @@ _artisan() {
 _migrate_done() {
 	local status
 	status="$(_artisan migrate:status)"
-	if grep -q ' Yes ' <<<"$status" && ! grep -q ' No ' <<<"$status"; then
+	if grep -q ' Ran' <<<"$status" && ! grep -q ' Pending' <<<"$status"; then
 		return 0
 	fi
 	return 1

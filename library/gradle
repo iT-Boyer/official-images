@@ -1,121 +1,338 @@
-Maintainers: Keegan Witt <keeganwitt@gmail.com> (@keeganwitt)
-GitRepo: https://github.com/keeganwitt/docker-gradle.git
+Maintainers: Louis Jacomet <louis@gradle.com> (@ljacomet),
+             Christoph Obexer <cobexer@gradle.com> (@cobexer),
+             Keegan Witt <keeganwitt@gmail.com> (@keeganwitt)
+GitRepo: https://github.com/gradle/docker-gradle.git
 
-# Hotspot
+# Gradle 9.x
 
-Tags: 7.1.1-jdk8, 7.1.1-jdk8-hotspot, 7.1-jdk8, 7.1-jdk8-hotspot, 7-jdk8, 7-jdk8-hotspot, jdk8, jdk8-hotspot, 7.1.1-jdk, 7.1.1-jdk-hotspot, 7.1-jdk, 7.1-jdk-hotspot, 7-jdk, 7-jdk-hotspot, jdk, jdk-hotspot, 7.1.1, 7.1.1-hotspot, 7.1, 7.1-hotspot, 7, 7-hotspot, latest, hotspot
-Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
-GitCommit: e1e5d8d814938022d495bf76d74ebc945412eb0a
-Directory: hotspot/jdk8
-
-Tags: 7.1.1-jre8, 7.1.1-jre8-hotspot, 7.1-jre8, 7.1-jre8-hotspot, 7-jre8, 7-jre8-hotspot, jre8, jre8-hotspot, 7.1.1-jre, 7.1.1-jre-hotspot, 7.1-jre, 7.1-jre-hotspot, 7-jre, 7-jre-hotspot, jre, jre-hotspot
-Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
-GitCommit: e1e5d8d814938022d495bf76d74ebc945412eb0a
-Directory: hotspot/jre8
-
-Tags: 7.1.1-jdk11, 7.1.1-jdk11-hotspot, 7.1-jdk11, 7.1-jdk11-hotspot, 7-jdk11, 7-jdk11-hotspot, jdk11, jdk11-hotspot
-Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
-GitCommit: e1e5d8d814938022d495bf76d74ebc945412eb0a
-Directory: hotspot/jdk11
-
-Tags: 7.1.1-jre11, 7.1.1-jre11-hotspot, 7.1-jre11, 7.1-jre11-hotspot, 7-jre11, 7-jre11-hotspot, jre11, jre11-hotspot
-Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
-GitCommit: e1e5d8d814938022d495bf76d74ebc945412eb0a
-Directory: hotspot/jre11
-
-Tags: 7.1.1-jdk16, 7.1.1-jdk16-hotspot, 7.1-jdk16, 7.1-jdk16-hotspot, 7-jdk16, 7-jdk16-hotspot, jdk16, jdk16-hotspot
-Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
-GitCommit: e1e5d8d814938022d495bf76d74ebc945412eb0a
-Directory: hotspot/jdk16
-
-Tags: 7.1.1-jre16, 7.1.1-jre16-hotspot, 7.1-jre16, 7.1-jre16-hotspot, 7-jre16, 7-jre16-hotspot, jre16, jre16-hotspot
-Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
-GitCommit: e1e5d8d814938022d495bf76d74ebc945412eb0a
-Directory: hotspot/jre16
-
-
-# OpenJ9
-
-Tags: 7.1.1-jdk8-openj9, 7.1-jdk8-openj9, 7-jdk8-openj9, jdk8-openj9, 7.1.1-jdk-openj9, 7.1-jdk-openj9, 7-jdk-openj9, jdk-openj9, 7.1.1-openj9, 7.1-openj9, 7-openj9, openj9
+Tags: 9.9.1-jdk25, 9.9-jdk25, 9-jdk25, jdk25, 9.9.1-jdk25-resolute, 9.9-jdk25-resolute, 9-jdk25-resolute, jdk25-resolute, latest, 9.9.1-jdk, 9.9-jdk, 9-jdk, jdk, 9.9.1, 9.9, 9, 9.9.1-jdk-resolute, 9.9-jdk-resolute, 9-jdk-resolute, jdk-resolute, 9.9.1-resolute, 9.9-resolute, 9-resolute, resolute
 Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: e1e5d8d814938022d495bf76d74ebc945412eb0a
-Directory: openj9/jdk8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk25-resolute
 
-Tags: 7.1.1-jre8-openj9, 7.1-jre8-openj9, 7-jre8-openj9, jre8-openj9, 7.1.1-jre-openj9, 7.1-jre-openj9, 7-jre-openj9, jre-openj9
+Tags: 9.9.1-jdk25-noble, 9.9-jdk25-noble, 9-jdk25-noble, jdk25-noble, 9.9.1-jdk-noble, 9.9-jdk-noble, 9-jdk-noble, jdk-noble, 9.9.1-noble, 9.9-noble, 9-noble, noble
+Architectures: amd64, arm64v8, ppc64le, riscv64, s390x
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk25-noble
+
+Tags: 9.9.1-jdk25-alpine, 9.9-jdk25-alpine, 9-jdk25-alpine, jdk25-alpine, 9.9.1-jdk-alpine, 9.9-jdk-alpine, 9-jdk-alpine, jdk-alpine, 9.9.1-alpine, 9.9-alpine, 9-alpine, alpine
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk25-alpine
+
+Tags: 9.9.1-jdk25-corretto, 9.9-jdk25-corretto, 9-jdk25-corretto, jdk25-corretto, corretto, 9.9.1-jdk25-corretto-al2023, 9.9-jdk25-corretto-al2023, 9-jdk25-corretto-al2023, jdk25-corretto-al2023, corretto-al2023
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk25-corretto
+
+Tags: 9.9.1-jdk25-ubi, 9.9-jdk25-ubi, 9-jdk25-ubi, jdk25-ubi, ubi, 9.9.1-jdk25-ubi10, 9.9-jdk25-ubi10, 9-jdk25-ubi10, jdk25-ubi10, ubi10
 Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: e1e5d8d814938022d495bf76d74ebc945412eb0a
-Directory: openj9/jre8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk25-ubi10
 
-Tags: 7.1.1-jdk11-openj9, 7.1-jdk11-openj9, 7-jdk11-openj9, jdk11-openj9
+Tags: 9.9.1-jdk25-graal, 9.9-jdk25-graal, 9-jdk25-graal, jdk25-graal, 9.9.1-jdk-graal, 9.9-jdk-graal, 9-jdk-graal, jdk-graal, 9.9.1-graal, 9.9-graal, 9-graal, graal, 9.9.1-jdk25-graal-resolute, 9.9-jdk25-graal-resolute, 9-jdk25-graal-resolute, jdk25-graal-resolute, 9.9.1-jdk-graal-resolute, 9.9-jdk-graal-resolute, 9-jdk-graal-resolute, jdk-graal-resolute, 9.9.1-graal-resolute, 9.9-graal-resolute, 9-graal-resolute, graal-resolute
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk25-resolute-graal
+
+Tags: 9.9.1-jdk25-graal-noble, 9.9-jdk25-graal-noble, 9-jdk25-graal-noble, jdk25-graal-noble, 9.9.1-jdk-graal-noble, 9.9-jdk-graal-noble, 9-jdk-graal-noble, jdk-graal-noble, 9.9.1-graal-noble, 9.9-graal-noble, 9-graal-noble, graal-noble
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk25-noble-graal
+
+Tags: 9.9.1-jdk21, 9.9-jdk21, 9-jdk21, jdk21, 9.9.1-jdk21-resolute, 9.9-jdk21-resolute, 9-jdk21-resolute, jdk21-resolute
 Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: e1e5d8d814938022d495bf76d74ebc945412eb0a
-Directory: openj9/jdk11
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk21-resolute
 
-Tags: 7.1.1-jre11-openj9, 7.1-jre11-openj9, 7-jre11-openj9, jre11-openj9
+Tags: 9.9.1-jdk21-noble, 9.9-jdk21-noble, 9-jdk21-noble, jdk21-noble
+Architectures: amd64, arm64v8, ppc64le, riscv64, s390x
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk21-noble
+
+Tags: 9.9.1-jdk21-jammy, 9.9-jdk21-jammy, 9-jdk21-jammy, jdk21-jammy, 9.9.1-jdk-jammy, 9.9-jdk-jammy, 9-jdk-jammy, jdk-jammy, 9.9.1-jammy, 9.9-jammy, 9-jammy, jammy
 Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: e1e5d8d814938022d495bf76d74ebc945412eb0a
-Directory: openj9/jre11
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk21-jammy
 
-Tags: 7.1.1-jdk16-openj9, 7.1-jdk16-openj9, 7-jdk16-openj9, jdk16-openj9
+Tags: 9.9.1-jdk21-alpine, 9.9-jdk21-alpine, 9-jdk21-alpine, jdk21-alpine
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk21-alpine
+
+Tags: 9.9.1-jdk21-corretto, 9.9-jdk21-corretto, 9-jdk21-corretto, jdk21-corretto, 9.9.1-jdk21-corretto-al2023, 9.9-jdk21-corretto-al2023, 9-jdk21-corretto-al2023, jdk21-corretto-al2023
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk21-corretto
+
+Tags: 9.9.1-jdk21-ubi, 9.9-jdk21-ubi, 9-jdk21-ubi, jdk21-ubi, 9.9.1-jdk21-ubi10, 9.9-jdk21-ubi10, 9-jdk21-ubi10, jdk21-ubi10
 Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: e1e5d8d814938022d495bf76d74ebc945412eb0a
-Directory: openj9/jdk16
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk21-ubi10
 
-Tags: 7.1.1-jre16-openj9, 7.1-jre16-openj9, 7-jre16-openj9, jre16-openj9
+Tags: 9.9.1-jdk21-ubi9, 9.9-jdk21-ubi9, 9-jdk21-ubi9, jdk21-ubi9, ubi9
 Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: e1e5d8d814938022d495bf76d74ebc945412eb0a
-Directory: openj9/jre16
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk21-ubi9
 
+Tags: 9.9.1-jdk21-graal, 9.9-jdk21-graal, 9-jdk21-graal, jdk21-graal, 9.9.1-jdk21-graal-resolute, 9.9-jdk21-graal-resolute, 9-jdk21-graal-resolute, jdk21-graal-resolute
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk21-resolute-graal
 
-# Gradle 6.x Hotspot
+Tags: 9.9.1-jdk21-graal-noble, 9.9-jdk21-graal-noble, 9-jdk21-graal-noble, jdk21-graal-noble
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk21-noble-graal
 
-Tags: 6.9.0-jdk8, 6.9.0-jdk8-hotspot, 6.9-jdk8, 6.9-jdk8-hotspot, 6-jdk8, 6-jdk8-hotspot, 6.9.0-jdk, 6.9.0-jdk-hotspot, 6.9-jdk, 6.9-jdk-hotspot, 6-jdk, 6-jdk-hotspot, 6.9.0, 6.9.0-hotspot, 6.9, 6.9-hotspot, 6, 6-hotspot
-GitFetch: refs/heads/6
+Tags: 9.9.1-jdk21-graal-jammy, 9.9-jdk21-graal-jammy, 9-jdk21-graal-jammy, jdk21-graal-jammy, 9.9.1-jdk-graal-jammy, 9.9-jdk-graal-jammy, 9-jdk-graal-jammy, jdk-graal-jammy, 9.9.1-graal-jammy, 9.9-graal-jammy, 9-graal-jammy, graal-jammy
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk21-jammy-graal
+
+Tags: 9.9.1-jdk17, 9.9-jdk17, 9-jdk17, jdk17, 9.9.1-jdk17-resolute, 9.9-jdk17-resolute, 9-jdk17-resolute, jdk17-resolute
 Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
-GitCommit: 337ce758ae6c3b0c6ebe2e00f5eef2743d34c165
-Directory: hotspot/jdk8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk17-resolute
 
-Tags: 6.9.0-jre8, 6.9.0-jre8-hotspot, 6.9-jre8, 6.9-jre8-hotspot, 6-jre8, 6-jre8-hotspot, 6.9.0-jre, 6.9.0-jre-hotspot, 6.9-jre, 6.9-jre-hotspot, 6-jre, 6-jre-hotspot
-GitFetch: refs/heads/6
+Tags: 9.9.1-jdk17-noble, 9.9-jdk17-noble, 9-jdk17-noble, jdk17-noble
+Architectures: amd64, arm32v7, arm64v8, ppc64le, riscv64, s390x
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk17-noble
+
+Tags: 9.9.1-jdk17-jammy, 9.9-jdk17-jammy, 9-jdk17-jammy, jdk17-jammy
 Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
-GitCommit: 337ce758ae6c3b0c6ebe2e00f5eef2743d34c165
-Directory: hotspot/jre8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk17-jammy
 
-Tags: 6.9.0-jdk11, 6.9.0-jdk11-hotspot, 6.9-jdk11, 6.9-jdk11-hotspot, 6-jdk11, 6-jdk11-hotspot
-GitFetch: refs/heads/6
+Tags: 9.9.1-jdk17-alpine, 9.9-jdk17-alpine, 9-jdk17-alpine, jdk17-alpine
+Architectures: amd64
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk17-alpine
+
+Tags: 9.9.1-jdk17-corretto, 9.9-jdk17-corretto, 9-jdk17-corretto, jdk17-corretto, 9.9.1-jdk17-corretto-al2023, 9.9-jdk17-corretto-al2023, 9-jdk17-corretto-al2023, jdk17-corretto-al2023
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk17-corretto
+
+Tags: 9.9.1-jdk17-ubi, 9.9-jdk17-ubi, 9-jdk17-ubi, jdk17-ubi, 9.9.1-jdk17-ubi10, 9.9-jdk17-ubi10, 9-jdk17-ubi10, jdk17-ubi10
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk17-ubi10
+
+Tags: 9.9.1-jdk17-ubi9, 9.9-jdk17-ubi9, 9-jdk17-ubi9, jdk17-ubi9
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk17-ubi9
+
+Tags: 9.9.1-jdk17-graal, 9.9-jdk17-graal, 9-jdk17-graal, jdk17-graal, 9.9.1-jdk17-graal-resolute, 9.9-jdk17-graal-resolute, 9-jdk17-graal-resolute, jdk17-graal-resolute
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk17-resolute-graal
+
+Tags: 9.9.1-jdk17-graal-noble, 9.9-jdk17-graal-noble, 9-jdk17-graal-noble, jdk17-graal-noble
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk17-noble-graal
+
+Tags: 9.9.1-jdk17-graal-jammy, 9.9-jdk17-graal-jammy, 9-jdk17-graal-jammy, jdk17-graal-jammy
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk17-jammy-graal
+
+Tags: 9.9.1-jdk27, 9.9-jdk27, 9-jdk27, jdk27, 9.9.1-jdk27-resolute, 9.9-jdk27-resolute, 9-jdk27-resolute, jdk27-resolute
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk27-resolute
+
+Tags: 9.9.1-jdk27-alpine, 9.9-jdk27-alpine, 9-jdk27-alpine, jdk27-alpine
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk27-alpine
+
+Tags: 9.9.1-jdk27-corretto, 9.9-jdk27-corretto, 9-jdk27-corretto, jdk27-corretto, 9.9.1-jdk27-corretto-al2023, 9.9-jdk27-corretto-al2023, 9-jdk27-corretto-al2023, jdk27-corretto-al2023
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk27-corretto
+
+Tags: 9.9.1-jdk27-ubi, 9.9-jdk27-ubi, 9-jdk27-ubi, jdk27-ubi, 9.9.1-jdk27-ubi10, 9.9-jdk27-ubi10, 9-jdk27-ubi10, jdk27-ubi10
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk27-ubi10
+
+Tags: 9.9.1-jdk-lts-and-current, 9.9-jdk-lts-and-current, 9-jdk-lts-and-current, jdk-lts-and-current, 9.9.1-jdk-lts-and-current-resolute, 9.9-jdk-lts-and-current-resolute, 9-jdk-lts-and-current-resolute, jdk-lts-and-current-resolute, 9.9.1-jdk-25-and-27, 9.9-jdk-25-and-27, 9-jdk-25-and-27, jdk-25-and-27, 9.9.1-jdk-25-and-27-resolute, 9.9-jdk-25-and-27-resolute, 9-jdk-25-and-27-resolute, jdk-25-and-27-resolute
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk-lts-and-current
+
+Tags: 9.9.1-jdk-lts-and-current-alpine, 9.9-jdk-lts-and-current-alpine, 9-jdk-lts-and-current-alpine, jdk-lts-and-current-alpine, 9.9.1-jdk-25-and-27-alpine, 9.9-jdk-25-and-27-alpine, 9-jdk-25-and-27-alpine, jdk-25-and-27-alpine
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk-lts-and-current-alpine
+
+Tags: 9.9.1-jdk-lts-and-current-corretto, 9.9-jdk-lts-and-current-corretto, 9-jdk-lts-and-current-corretto, jdk-lts-and-current-corretto, 9.9.1-jdk-lts-and-current-corretto-al2023, 9.9-jdk-lts-and-current-corretto-al2023, 9-jdk-lts-and-current-corretto-al2023, jdk-lts-and-current-corretto-al2023, 9.9.1-jdk-25-and-27-corretto, 9.9-jdk-25-and-27-corretto, 9-jdk-25-and-27-corretto, jdk-25-and-27-corretto, 9.9.1-jdk-25-and-27-corretto-al2023, 9.9-jdk-25-and-27-corretto-al2023, 9-jdk-25-and-27-corretto-al2023, jdk-25-and-27-corretto-al2023
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/master
+GitCommit: a382861c50c5550526a595ca5edfbb594a63e0be
+Directory: jdk-lts-and-current-corretto
+
+# Gradle 8.x
+
+Tags: 8.14.7-jdk21, 8.14-jdk21, 8-jdk21, 8.14.7-jdk21-noble, 8.14-jdk21-noble, 8-jdk21-noble, 8.14.7-jdk, 8.14-jdk, 8-jdk, 8.14.7, 8.14, 8, 8.14.7-jdk-noble, 8.14-jdk-noble, 8-jdk-noble, 8.14.7-noble, 8.14-noble, 8-noble
+Architectures: amd64, arm64v8, ppc64le, riscv64, s390x
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk21-noble
+
+Tags: 8.14.7-jdk21-jammy, 8.14-jdk21-jammy, 8-jdk21-jammy, 8.14.7-jdk-jammy, 8.14-jdk-jammy, 8-jdk-jammy, 8.14.7-jammy, 8.14-jammy, 8-jammy
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk21-jammy
+
+Tags: 8.14.7-jdk21-alpine, 8.14-jdk21-alpine, 8-jdk21-alpine, 8.14.7-jdk-alpine, 8.14-jdk-alpine, 8-jdk-alpine, 8.14.7-alpine, 8.14-alpine, 8-alpine
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk21-alpine
+
+Tags: 8.14.7-jdk21-corretto, 8.14-jdk21-corretto, 8-jdk21-corretto, 8.14.7-jdk21-corretto-al2023, 8.14-jdk21-corretto-al2023, 8-jdk21-corretto-al2023
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk21-corretto
+
+Tags: 8.14.7-jdk21-ubi, 8.14-jdk21-ubi, 8-jdk21-ubi, 8.14.7-jdk21-ubi9, 8.14-jdk21-ubi9, 8-jdk21-ubi9
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk21-ubi9
+
+Tags: 8.14.7-jdk21-graal, 8.14-jdk21-graal, 8-jdk21-graal, 8.14.7-jdk-graal, 8.14-jdk-graal, 8-jdk-graal, 8.14.7-graal, 8.14-graal, 8-graal, 8.14.7-jdk21-graal-noble, 8.14-jdk21-graal-noble, 8-jdk21-graal-noble, 8.14.7-jdk-graal-noble, 8.14-jdk-graal-noble, 8-jdk-graal-noble, 8.14.7-graal-noble, 8.14-graal-noble, 8-graal-noble
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk21-noble-graal
+
+Tags: 8.14.7-jdk21-graal-jammy, 8.14-jdk21-graal-jammy, 8-jdk21-graal-jammy, 8.14.7-jdk-graal-jammy, 8.14-jdk-graal-jammy, 8-jdk-graal-jammy, 8.14.7-graal-jammy, 8.14-graal-jammy, 8-graal-jammy
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk21-jammy-graal
+
+Tags: 8.14.7-jdk17, 8.14-jdk17, 8-jdk17, 8.14.7-jdk17-noble, 8.14-jdk17-noble, 8-jdk17-noble
+Architectures: amd64, arm32v7, arm64v8, ppc64le, riscv64, s390x
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk17-noble
+
+Tags: 8.14.7-jdk17-jammy, 8.14-jdk17-jammy, 8-jdk17-jammy
 Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
-GitCommit: 337ce758ae6c3b0c6ebe2e00f5eef2743d34c165
-Directory: hotspot/jdk11
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk17-jammy
 
-Tags: 6.9.0-jre11, 6.9.0-jre11-hotspot, 6.9-jre11, 6.9-jre11-hotspot, 6-jre11, 6-jre11-hotspot
-GitFetch: refs/heads/6
+Tags: 8.14.7-jdk17-alpine, 8.14-jdk17-alpine, 8-jdk17-alpine
+Architectures: amd64
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk17-alpine
+
+Tags: 8.14.7-jdk17-corretto, 8.14-jdk17-corretto, 8-jdk17-corretto, 8.14.7-jdk17-corretto-al2023, 8.14-jdk17-corretto-al2023, 8-jdk17-corretto-al2023
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk17-corretto
+
+Tags: 8.14.7-jdk17-ubi, 8.14-jdk17-ubi, 8-jdk17-ubi, 8.14.7-jdk17-ubi9, 8.14-jdk17-ubi9, 8-jdk17-ubi9
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk17-ubi9
+
+Tags: 8.14.7-jdk17-graal, 8.14-jdk17-graal, 8-jdk17-graal, 8.14.7-jdk17-graal-noble, 8.14-jdk17-graal-noble, 8-jdk17-graal-noble
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk17-noble-graal
+
+Tags: 8.14.7-jdk17-graal-jammy, 8.14-jdk17-graal-jammy, 8-jdk17-graal-jammy
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk17-jammy-graal
+
+Tags: 8.14.7-jdk11, 8.14-jdk11, 8-jdk11, jdk11, 8.14.7-jdk11-jammy, 8.14-jdk11-jammy, 8-jdk11-jammy, jdk11-jammy
 Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
-GitCommit: 337ce758ae6c3b0c6ebe2e00f5eef2743d34c165
-Directory: hotspot/jre11
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk11-jammy
 
+Tags: 8.14.7-jdk11-alpine, 8.14-jdk11-alpine, 8-jdk11-alpine, jdk11-alpine
+Architectures: amd64
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk11-alpine
 
-# Gradle 6.x OpenJ9
+Tags: 8.14.7-jdk11-corretto, 8.14-jdk11-corretto, 8-jdk11-corretto, jdk11-corretto, 8.14.7-jdk11-corretto-al2023, 8.14-jdk11-corretto-al2023, 8-jdk11-corretto-al2023, jdk11-corretto-al2023
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk11-corretto
 
-Tags: 6.9.0-jdk8-openj9, 6.9-jdk8-openj9, 6-jdk8-openj9, 6.9.0-jdk-openj9, 6.9-jdk-openj9, 6-jdk-openj9, 6.9.0-openj9, 6.9-openj9, 6-openj9
-GitFetch: refs/heads/6
+Tags: 8.14.7-jdk11-ubi, 8.14-jdk11-ubi, 8-jdk11-ubi, jdk11-ubi, 8.14.7-jdk11-ubi9, 8.14-jdk11-ubi9, 8-jdk11-ubi9, jdk11-ubi9
 Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: 337ce758ae6c3b0c6ebe2e00f5eef2743d34c165
-Directory: openj9/jdk8
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk11-ubi9
 
-Tags: 6.9.0-jre8-openj9, 6.9-jre8-openj9, 6-jre8-openj9, 6.9.0-jre-openj9, 6.9-jre-openj9, 6-jre-openj9
-GitFetch: refs/heads/6
-Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: 337ce758ae6c3b0c6ebe2e00f5eef2743d34c165
-Directory: openj9/jre8
+Tags: 8.14.7-jdk8, 8.14-jdk8, 8-jdk8, jdk8, 8.14.7-jdk8-jammy, 8.14-jdk8-jammy, 8-jdk8-jammy, jdk8-jammy
+Architectures: amd64, arm32v7, arm64v8, ppc64le
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk8-jammy
 
-Tags: 6.9.0-jdk11-openj9, 6.9-jdk11-openj9, 6-jdk11-openj9
-GitFetch: refs/heads/6
-Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: 337ce758ae6c3b0c6ebe2e00f5eef2743d34c165
-Directory: openj9/jdk11
+Tags: 8.14.7-jdk8-corretto, 8.14-jdk8-corretto, 8-jdk8-corretto, jdk8-corretto, 8.14.7-jdk8-corretto-al2023, 8.14-jdk8-corretto-al2023, 8-jdk8-corretto-al2023, jdk8-corretto-al2023
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk8-corretto
 
-Tags: 6.9.0-jre11-openj9, 6.9-jre11-openj9, 6-jre11-openj9
-GitFetch: refs/heads/6
-Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: 337ce758ae6c3b0c6ebe2e00f5eef2743d34c165
-Directory: openj9/jre11
+Tags: 8.14.7-jdk8-ubi, 8.14-jdk8-ubi, 8-jdk8-ubi, jdk8-ubi, 8.14.7-jdk8-ubi9, 8.14-jdk8-ubi9, 8-jdk8-ubi9, jdk8-ubi9
+Architectures: amd64, arm64v8, ppc64le
+GitFetch: refs/heads/8
+GitCommit: 9b40a70500f9231327403fec42aad883b19a8c85
+Directory: jdk8-ubi9

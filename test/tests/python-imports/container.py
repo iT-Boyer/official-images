@@ -1,8 +1,8 @@
-import platform
+import platform, sys
 
 isWindows = platform.system() == 'Windows'
 isNotPypy = platform.python_implementation() != 'PyPy'
-isCaveman = platform.python_version_tuple()[0] == '2'
+isCaveman = sys.version_info[0] == 2
 
 if not isWindows:
     import curses
@@ -12,6 +12,7 @@ if not isWindows:
         import gdbm
     else:
         import dbm.gnu
+        import dbm.ndbm
 
 import bz2
 assert(bz2.decompress(bz2.compress(b'IT WORKS IT WORKS IT WORKS')) == b'IT WORKS IT WORKS IT WORKS')
@@ -22,3 +23,23 @@ assert(zlib.decompress(zlib.compress(b'IT WORKS IT WORKS IT WORKS')) == b'IT WOR
 if not isCaveman:
     import lzma
     assert(lzma.decompress(lzma.compress(b'IT WORKS IT WORKS IT WORKS')) == b'IT WORKS IT WORKS IT WORKS')
+
+    if sys.version_info[1] >= 14:
+        # https://docs.python.org/3.14/library/compression.zstd.html
+        from compression import zstd
+        assert(zstd.decompress(zstd.compress(b'IT WORKS IT WORKS IT WORKS')) == b'IT WORKS IT WORKS IT WORKS')
+
+    # https://github.com/docker-library/python/pull/954
+    shouldHaveSetuptoolsAndWheel = sys.version_info[0] == 3 and sys.version_info[1] < 12
+    import importlib.util
+    hasSetuptools = importlib.util.find_spec('setuptools') is not None
+    hasWheel = importlib.util.find_spec('wheel') is not None
+    assert(hasSetuptools == shouldHaveSetuptoolsAndWheel)
+    assert(hasWheel == shouldHaveSetuptoolsAndWheel)
+
+if isNotPypy:
+    # https://github.com/docker-library/python/issues/1136
+    # https://github.com/python/cpython/issues/115119
+    # (need _decimal for fast Decimal arithmetic)
+    import _decimal
+    # unfortunately, (currently, 2026-10-14, pypy 8.0.1) no _decimal fast-path for pypy

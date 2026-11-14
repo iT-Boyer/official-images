@@ -1,44 +1,65 @@
-# this file is generated via https://github.com/docker-library/redmine/blob/3a41d66499222d90f2f4207c7f6dafd38f4001c5/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/redmine/blob/f772dee7158856abee669c717bb258f1ad43bce9/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/redmine.git
 
-Tags: 4.2.2, 4.2, 4, latest
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: dbfcdff61cd9da51b2a5bd5146a381fa4c3776d8
-Directory: 4.2
+Tags: 7.0.3, 7.0, 7, latest, 7.0.3-trixie, 7.0-trixie, 7-trixie, trixie
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 49a27f29f1d214a4226af75b55578e36d3474c4c
+Directory: 7.0/trixie
 
-Tags: 4.2.2-passenger, 4.2-passenger, 4-passenger, passenger
-GitCommit: 88e2dafa2719a4196069257c2049f1a4ae457551
-Directory: 4.2/passenger
+Tags: 7.0.3-bookworm, 7.0-bookworm, 7-bookworm, bookworm
+Architectures: amd64, arm64v8
+GitCommit: 49a27f29f1d214a4226af75b55578e36d3474c4c
+Directory: 7.0/bookworm
 
-Tags: 4.2.2-alpine, 4.2-alpine, 4-alpine, alpine
-GitCommit: dbfcdff61cd9da51b2a5bd5146a381fa4c3776d8
-Directory: 4.2/alpine
+Tags: 7.0.3-alpine3.24, 7.0-alpine3.24, 7-alpine3.24, alpine3.24, 7.0.3-alpine, 7.0-alpine, 7-alpine, alpine
+Architectures: amd64, arm64v8, ppc64le, riscv64, s390x
+GitCommit: 49a27f29f1d214a4226af75b55578e36d3474c4c
+Directory: 7.0/alpine3.24
 
-Tags: 4.1.4, 4.1
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: b31875ae4c7534c0699ff0ffd5513cbb39813f44
-Directory: 4.1
+Tags: 7.0.3-alpine3.23, 7.0-alpine3.23, 7-alpine3.23, alpine3.23
+Architectures: amd64, arm64v8, ppc64le, riscv64, s390x
+GitCommit: 49a27f29f1d214a4226af75b55578e36d3474c4c
+Directory: 7.0/alpine3.23
 
-Tags: 4.1.4-passenger, 4.1-passenger
-GitCommit: 88e2dafa2719a4196069257c2049f1a4ae457551
-Directory: 4.1/passenger
+Tags: 6.1.6, 6.1, 6, 6.1.6-trixie, 6.1-trixie, 6-trixie
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 2629db055bd4efe7c2ded28bac1e8b0f35aacfbc
+Directory: 6.1/trixie
 
-Tags: 4.1.4-alpine, 4.1-alpine
-GitCommit: b31875ae4c7534c0699ff0ffd5513cbb39813f44
-Directory: 4.1/alpine
+Tags: 6.1.6-bookworm, 6.1-bookworm, 6-bookworm
+Architectures: amd64, arm64v8
+GitCommit: 2629db055bd4efe7c2ded28bac1e8b0f35aacfbc
+Directory: 6.1/bookworm
 
-Tags: 4.0.9, 4.0
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 02809f9dead7b26e490f84107c7a2170f11fd2b9
-Directory: 4.0
+Tags: 6.1.6-alpine3.24, 6.1-alpine3.24, 6-alpine3.24, 6.1.6-alpine, 6.1-alpine, 6-alpine
+Architectures: amd64, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 2629db055bd4efe7c2ded28bac1e8b0f35aacfbc
+Directory: 6.1/alpine3.24
 
-Tags: 4.0.9-passenger, 4.0-passenger
-GitCommit: 88e2dafa2719a4196069257c2049f1a4ae457551
-Directory: 4.0/passenger
+Tags: 6.1.6-alpine3.23, 6.1-alpine3.23, 6-alpine3.23
+Architectures: amd64, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 2629db055bd4efe7c2ded28bac1e8b0f35aacfbc
+Directory: 6.1/alpine3.23
 
-Tags: 4.0.9-alpine, 4.0-alpine
-GitCommit: 02809f9dead7b26e490f84107c7a2170f11fd2b9
-Directory: 4.0/alpine
+Tags: 6.0.12, 6.0, 6.0.12-trixie, 6.0-trixie
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: ec4c2901fc12059c6c488553f07335110bc87d78
+Directory: 6.0/trixie
+
+Tags: 6.0.12-bookworm, 6.0-bookworm
+Architectures: amd64, arm32v7, arm64v8, i386, ppc64le
+GitCommit: ec4c2901fc12059c6c488553f07335110bc87d78
+Directory: 6.0/bookworm
+
+Tags: 6.0.12-alpine3.24, 6.0-alpine3.24, 6.0.12-alpine, 6.0-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: ec4c2901fc12059c6c488553f07335110bc87d78
+Directory: 6.0/alpine3.24
+
+Tags: 6.0.12-alpine3.23, 6.0-alpine3.23
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: ec4c2901fc12059c6c488553f07335110bc87d78
+Directory: 6.0/alpine3.23
